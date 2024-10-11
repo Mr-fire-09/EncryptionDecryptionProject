@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption and Decryption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-animation">
+            <h1>Welcome to Encryption and Decryption Tool</h1>
+        </div>
+        <div class="window">
+            <h1>Encryption and Decryption</h1>
+            <div class="form-group">
+                <label for="plainText">Enter Text to Encrypt:</label>
+                <textarea id="plainText" placeholder="Enter text"></textarea>
+                <button onclick="encrypt()">Encrypt</button>
+            </div>
+
+            <div class="form-group">
+                <label for="encryptedText">Encrypted Text:</label>
+                <textarea id="encryptedText" readonly></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="cipherText">Enter Text to Decrypt:</label>
+                <textarea id="cipherText" placeholder="Enter encrypted text"></textarea>
+                <button onclick="decrypt()">Decrypt</button>
+            </div>
+
+            <div class="form-group">
+                <label for="decryptedText">Decrypted Text:</label>
+                <textarea id="decryptedText" readonly></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">

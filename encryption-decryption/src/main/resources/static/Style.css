@@ -1,0 +1,110 @@
+body {
+    font-family: ' Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('background.jpg'); /* add background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 50%; /* medium-sized box */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    animation: welcome 2s ease-in-out;
+}
+
+@keyframes welcome {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.window {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+/* add automatic color-changing buttons */
+button.color-change {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+}
+
+button.color-change:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+button.color-change:active {
+    background-color: #444;
+    color: #fff;
+}
+
+/* add animation to change background color and border color */
+body.full-screen {
+    animation: fullScreen 0.5s ease-in-out;
+}
+
+@keyframes fullScreen {
+    0% {
+        background-color: #333;
+    }
+    100% {
+        background-color: #444;
+    }
+}

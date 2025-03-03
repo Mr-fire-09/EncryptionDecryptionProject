@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-EncryptionDecryptionApplication<encryption-decryption>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.encryption_decryption.EncryptionDecryptionApplication",
+            "projectName": "encryption-decryption",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
